@@ -1,4 +1,4 @@
-<!-- Pagina de contactos -->
+<!-- Page: contactos -->
 <div class="page_wrapper">
   <div class="page_container">
     <div class="page_content">

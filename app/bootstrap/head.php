@@ -1,25 +1,19 @@
-<!-- Cabecera compartida del proyecto -->
+<!-- Shared project header -->
 <?php
 
-  // Construye la ruta del archivo de entorno
-  // --
   // Build the environment file path
-  $raiz = $_SERVER['DOCUMENT_ROOT'];
-  $ruta_env = "$raiz/prueba/app/.env";
+  $root = $_SERVER['DOCUMENT_ROOT'];
+  $env_path = "$root/prueba/app/.env";
 
 
-  // Si el archivo de entorno existe asigna el titulo de la página de allí
-  // --
-  // If env file exist, sets title from there
-  if (is_file($ruta_env)) {
-    $entorno = parse_ini_file($ruta_env);
-    $nombre = $entorno["APP_NAME"];
+  // If env file exists, sets title from there
+  if (is_file($env_path)) {
+    $env = parse_ini_file($env_path);
+    $app_name = $env["APP_NAME"];
 
-    echo '<title>'.$nombre.'</title>';
+    echo '<title>'.$app_name.'</title>';
   }
 
-  // Asignar el ícono y la hoja de estilos principal
-  // --
   // Sets the favicon and the main stylesheet
   echo '<link rel="icon" type="image/x-icon" href="./favicon.ico">';
   echo '<link href="./assets/styles/main.css" rel="stylesheet">';
