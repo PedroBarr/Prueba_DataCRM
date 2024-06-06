@@ -18,4 +18,7 @@
   echo '<link rel="icon" type="image/x-icon" href="./favicon.ico">';
   echo '<link href="./assets/styles/main.css" rel="stylesheet">';
 
+  echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>';
+  echo '<script src="./assets/scripts/main.js"></script>';
+
 ?>

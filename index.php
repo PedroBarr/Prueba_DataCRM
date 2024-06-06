@@ -1,11 +1,14 @@
 <?php
   // Includes config, utils and controllers namespaces
-  include "app/config/config.php";
-  include "app/config/auth.php";
+  // CONFIG
+  include_once("app/config/config.php");
+  include_once("app/config/auth.php");
 
-  include "app/utils/api.php";
-  include "app/utils/auth.php";
+  // UTILS
+  include_once("app/utils/api.php");
+  include_once("app/utils/auth.php");
 
+  // CONTROLLERS
   include_once('app/mvc/controllers/selector.php');
 ?>
 
@@ -21,7 +24,7 @@
 
   <body>
     <?php
-      // Due to the test requirements, not router is implemented
+      // Due to the test requirements, not complex router is implemented
       include "app/mvc/views/pages/contacts.php"
     ?>
   </body>
