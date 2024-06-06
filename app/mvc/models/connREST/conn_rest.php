@@ -1,12 +1,17 @@
-<!-- Clase abstracta conexión RESTful -->
 <?php
-  namespace mvc.models.conn_rest;
+  /*
+   * Abstract class Conection RESTful
+   */
+  namespace models\conn_rest;
 
-  abstract class ConexionRest {
+  abstract class ConectionRestful {
 
-    public $nombre_entidad;
+    protected $entity_name;
 
-    abstract public function Lista(): string;
+    abstract protected function get_list_query(): string;
+    abstract protected function get_list_params(): Array;
+    abstract protected function get_list_headers(): Array;
+    abstract public function get_list(): Array;
   }
 
 ?>

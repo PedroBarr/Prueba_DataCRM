@@ -20,7 +20,7 @@
   <body>
     <?php
       // Due to the test requirements, not router is implemented
-      include "app/mvc/views/pages/contactos.php"
+      include "app/mvc/views/pages/contacts.php"
     ?>
   </body>
 </html>
