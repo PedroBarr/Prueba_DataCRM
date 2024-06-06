@@ -4,6 +4,7 @@
   include "app/config/auth.php";
 
   include "app/utils/api.php";
+  include "app/utils/auth.php";
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@
 
   <body>
     <?php
-      // Due to the test requirements, not router was implemented
+      // Due to the test requirements, not router is implemented
       include "app/mvc/views/pages/contactos.php"
     ?>
   </body>
