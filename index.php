@@ -1,3 +1,11 @@
+<?php
+  // Includes config and utils namespaces
+  include "app/config/config.php";
+  include "app/config/auth.php";
+
+  include "app/utils/api.php";
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,6 +13,7 @@
       // Includes the shared project header
       include "app/bootstrap/head.php";
     ?>
+
   </head>
 
   <body>
