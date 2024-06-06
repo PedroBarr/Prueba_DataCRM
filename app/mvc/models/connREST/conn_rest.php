@@ -1,9 +1,13 @@
 <?php
-  /*
+  /**
    * Abstract class Conection RESTful
    */
   namespace models\conn_rest;
 
+  /**
+   * This class declared abstract methods for all RESTful classes
+   * Due test requirements, only list methods is declared
+   */
   abstract class ConectionRestful {
 
     protected $entity_name;

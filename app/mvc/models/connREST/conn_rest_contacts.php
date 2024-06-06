@@ -1,6 +1,6 @@
 <?php
-  /*
-   * Class concreta Conection RESTful: Contacts
+  /**
+   * Concrete class Conection RESTful: Contacts
    */
   namespace models\conn_rest;
 
@@ -9,6 +9,9 @@
   use utils\api as http_client;
   use config\auth\AuthService as Auth;
 
+  /**
+   * This RESTful class handles all REST requests for entity Contacts from api
+   */
   class ConectionRestfulContacts extends ConectionRestful {
 
     protected $entity_name = 'Contacts';
