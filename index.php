@@ -1,10 +1,12 @@
 <?php
-  // Includes config and utils namespaces
+  // Includes config, utils and controllers namespaces
   include "app/config/config.php";
   include "app/config/auth.php";
 
   include "app/utils/api.php";
   include "app/utils/auth.php";
+
+  include_once('app/mvc/controllers/selector.php');
 ?>
 
 <!DOCTYPE html>

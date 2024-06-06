@@ -4,7 +4,7 @@
    */
   namespace models\conn_rest;
 
-  include 'app/mvc/models/connREST/conn_rest.php';
+  include_once('app/mvc/models/connREST/conn_rest.php');
 
   use utils\api as http_client;
   use config\auth\AuthService as Auth;

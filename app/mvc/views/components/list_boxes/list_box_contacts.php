@@ -4,7 +4,7 @@
    */
   namespace views\components\list_boxes;
 
-  include 'app/mvc/views/components/list_boxes/list_box.php';
+  include_once('app/mvc/views/components/list_boxes/list_box.php');
 
   /**
    * This RESTful class handles all REST requests for entity Contacts from api
