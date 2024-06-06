@@ -10,6 +10,10 @@
    * This RESTful class handles all REST requests for entity Contacts from api
    */
   class ListBoxContacts implements ListBox {
+
+    /**
+     * Build header row for HTML table from fields array
+     */
     public static function build_header(Array $header_fields): string {
       $header = '<tr>';
       foreach ($header_fields as $field) {
@@ -19,6 +23,9 @@
       return $header;
     }
 
+    /**
+     * Build row for HTML table from object through array of fields
+     */
     public static function build_row(
       Array $header_fields,
       Array $object,
@@ -31,6 +38,9 @@
       return $row;
     }
 
+    /**
+     * Build HTML table from entity list through array of fields
+     */
     public static function build_table(
       Array $header_fields,
       Array $entity_list,
